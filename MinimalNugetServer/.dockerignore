@@ -1,0 +1,6 @@
+*
+!conf/configuration.json
+!scripts/start.sh
+!nuget-packages
+!obj/Docker/publish/*
+!obj/Docker/empty/

@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  minimalnugetserver:
+    image: minimalnugetserver
+    ports:
+      - 4356:4356
+    build:
+      context: ./MinimalNugetServer
+      dockerfile: Dockerfile
+

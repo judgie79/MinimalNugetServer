@@ -13,7 +13,7 @@ namespace MinimalNugetServer
     {
         public static void Main(string[] args)
         {
-            string configurationFile = "configuration.json";
+            string configurationFile = "conf/configuration.json";
 
             if (args.Length == 1)
                 configurationFile = args[0];

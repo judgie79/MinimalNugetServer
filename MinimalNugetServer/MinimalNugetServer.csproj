@@ -36,6 +36,14 @@
     <ItemGroup>
         <DotNetCliToolReference Include="Bitcraft.Tools.GitCommitInfo" Version="1.1.0" />
     </ItemGroup>
+    <ItemGroup>
+      <None Update=".dockerignore">
+        <DependentUpon>Dockerfile</DependentUpon>
+      </None>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="nuget-packages\" />
+    </ItemGroup>
 
     <Target Name="GitCommitInfoTarget" AfterTargets="Restore" BeforeTargets="BeforeBuild">
         <Exec Command="dotnet git-commit-info" />
